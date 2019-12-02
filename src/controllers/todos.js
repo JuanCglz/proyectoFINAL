@@ -9,6 +9,15 @@ const getTodos = function(req, res) {
   })
 }
 
+const getTodosAll = function(req, res) {
+  // solo podemos hacer GET de los todos del usuario que hizo login
+  Todo.find({}).then(function(todos) {
+    res.send(todos)
+  }).catch(function(error){
+    res.status(500).send(error)
+  })
+}
+
 const getTodo = function(req, res) {
   // solo podemos traer el todo si es que es del usuario que hizo login
   const _id = req.params.id

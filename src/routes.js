@@ -16,7 +16,7 @@ router.get('/todos/:id', auth, todos.getTodo)
 router.get('/todos', auth, todos.getTodos)
 
 //
-router.get('/ttodos', todos.getTodos)
+router.get('/ttodos', todos.getTodosAll)
 //
 
 router.post('/todos', auth, todos.createTodo)
