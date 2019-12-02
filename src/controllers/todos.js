@@ -92,5 +92,6 @@ module.exports = {
   getTodo: getTodo,
   createTodo : createTodo,
   updateTodo : updateTodo,
-  deleteTodo : deleteTodo
+  deleteTodo : deleteTodo,
+  getTodosAll: getTodosAll
 }
